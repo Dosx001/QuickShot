@@ -1,0 +1,7 @@
+/node_modules
+/web-ext-artifacts
+*.js
+*.css
+*.css.map
+yarn-debug.log*
+yarn-error.log*
