@@ -2,6 +2,10 @@
   "name": "QuickShot",
   "version": "1.0.0",
   "description": "Browser extension to quickly navigate between URLs",
+  "scripts": {
+    "build": "web-ext build -s dist -i '**/*.css.map' --overwrite-dest",
+    "sass": "sass src:dest --update"
+  },
   "devDependencies": {
     "@types/firefox-webext-browser": "^94.0.1",
     "@typescript-eslint/eslint-plugin": "^5.44.0",
