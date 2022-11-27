@@ -11,6 +11,12 @@
     "48": "./icons/icon-48.png",
     "128": "./icons/icon-128.png"
   },
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "./icons/icon-48.png",
+    "default_popup": "./popup/index.html",
+    "default_title": "Quick Shot"
+  },
   "content_scripts": [
     {
       "matches": [

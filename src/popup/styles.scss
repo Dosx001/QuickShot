@@ -1,0 +1,21 @@
+body {
+  background-color: #181a1b;
+  color: darkgray;
+  margin: 1rem;
+}
+input {
+  background-color: black;
+  color: darkgray;
+}
+table {
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-collapse: separate;
+  border-spacing: 0;
+  th,
+  td {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    text-align: center;
+  }
+}
