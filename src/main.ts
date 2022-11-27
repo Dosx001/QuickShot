@@ -1,12 +1,35 @@
+const openUrl = (key: string, tab: boolean) => {
+  browser.storage.local.get(key).then((res) => {
+    const url = Object.values(res)[0];
+    if (url) {
+      tab ? window.open(url) : window.location.assign(url);
+    }
+  });
+};
+
 document.addEventListener("keydown", (ev) => {
   if (ev.ctrlKey) {
-    switch (ev.key) {
-      case "1":
-        window.open("https://www.github.com");
+    switch (ev.code) {
+      case "Digit1":
+      case "Digit2":
+      case "Digit3":
+      case "Digit4":
+      case "Digit5":
+      case "Digit6":
+      case "Digit7":
+      case "Digit8":
+      case "Digit9":
+      case "Digit0":
+        if (ev.altKey) {
+          const obj = new Map();
+          obj.set(ev.code.charAt(5), window.location.href);
+          browser.storage.local.set(Object.fromEntries(obj));
+        } else {
+          openUrl(ev.code.charAt(5), ev.shiftKey);
+        }
         break;
-      case "2":
-        window.location.assign("https://www.youtube.com");
-        break;
+      case "F9":
+        browser.browserAction.openPopup();
     }
   }
 });

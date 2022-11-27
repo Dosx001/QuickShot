@@ -12,7 +12,7 @@ const th = document.createElement("th");
 th.append(tr);
 table.append(tr);
 
-for (let i = 1; i < 11; i++) {
+for (let i = 0; i < 10; i++) {
   browser.storage.local.get(i.toString()).then((res) => {
     tr = document.createElement("tr");
     key = document.createElement("td");
