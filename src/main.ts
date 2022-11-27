@@ -27,9 +27,6 @@ document.addEventListener("keydown", (ev) => {
         } else {
           openUrl(ev.code.charAt(5), ev.shiftKey);
         }
-        break;
-      case "F9":
-        browser.browserAction.openPopup();
     }
   }
 });
