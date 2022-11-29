@@ -1,5 +1,5 @@
 const openUrl = (key: string, tab: boolean) => {
-  browser.storage.local.get(key).then((res) => {
+  browser.storage.sync.get(key).then((res) => {
     const url = Object.values(res)[0];
     if (url) {
       tab ? window.open(url) : window.location.assign(url);
@@ -23,7 +23,7 @@ document.addEventListener("keydown", (ev) => {
         if (ev.altKey) {
           const obj = new Map();
           obj.set(ev.code.charAt(5), window.location.href);
-          browser.storage.local.set(Object.fromEntries(obj));
+          browser.storage.sync.set(Object.fromEntries(obj));
         } else {
           openUrl(ev.code.charAt(5), ev.shiftKey);
         }
