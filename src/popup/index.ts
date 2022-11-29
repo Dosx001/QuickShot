@@ -21,6 +21,7 @@ for (let i = 0; i < 10; i++) {
     const input = document.createElement("input");
     input.type = "url";
     input.value = Object.values(res)[0] ?? "";
+    input.placeholder = "Paste URL here";
     input.oninput = () => {
       const obj = new Map();
       obj.set(i, input.value);

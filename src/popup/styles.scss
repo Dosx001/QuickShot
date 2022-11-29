@@ -1,13 +1,18 @@
 body {
-  background-color: #181a1b;
+  background-color: #0d1117;
   color: darkgray;
   margin: 1rem;
+}
+a {
+  color: dodgerblue;
 }
 input {
   background-color: black;
   color: darkgray;
+  border: 1px solid #484848;
 }
 table {
+  background: #181a1b;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-collapse: separate;
@@ -18,4 +23,12 @@ table {
     border-right: 2px solid black;
     text-align: center;
   }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+h1 {
+  text-align: center;
+  margin: 0;
 }
