@@ -13,7 +13,7 @@ th.append(tr);
 table.append(tr);
 
 for (let i = 0; i < 10; i++) {
-  browser.storage.local.get(i.toString()).then((res) => {
+  browser.storage.sync.get(i.toString()).then((res) => {
     tr = document.createElement("tr");
     key = document.createElement("td");
     key.innerText = i.toString();
@@ -25,7 +25,7 @@ for (let i = 0; i < 10; i++) {
     input.oninput = () => {
       const obj = new Map();
       obj.set(i, input.value);
-      browser.storage.local.set(Object.fromEntries(obj));
+      browser.storage.sync.set(Object.fromEntries(obj));
     };
     url.append(input);
     tr.append(key);
