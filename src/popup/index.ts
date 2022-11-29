@@ -33,3 +33,6 @@ for (let i = 0; i < 10; i++) {
     app?.append(table);
   });
 }
+
+document.querySelector<HTMLButtonElement>("#ver")!.innerText = `v${browser.runtime.getManifest().version
+  }`;
