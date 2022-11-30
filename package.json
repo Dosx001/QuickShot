@@ -4,6 +4,7 @@
   "description": "Browser extension to quickly navigate between URLs",
   "scripts": {
     "build": "web-ext build -s dist -i '**/*.css.map' --overwrite-dest",
+    "tar": "tar czvf QuickShot.tar.gz src dist build.sh package.json tsconfig.json yarn.lock README_FIREFOX.md",
     "sass": "sass --update src:dest"
   },
   "devDependencies": {
