@@ -10,17 +10,19 @@ input {
   background-color: black;
   color: darkgray;
   border: 1px solid #484848;
+  width: 100%;
 }
 table {
   background: #181a1b;
-  border-top: 2px solid black;
-  border-left: 2px solid black;
+  border-top: 2px solid maroon;
+  border-left: 2px solid maroon;
   border-collapse: separate;
   border-spacing: 0;
+  width: 100%;
   th,
   td {
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
+    border-bottom: 2px solid maroon;
+    border-right: 2px solid maroon;
     text-align: center;
   }
 }

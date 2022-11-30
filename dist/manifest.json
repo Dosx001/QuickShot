@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Quick Shot",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Quickly navigate between URLs using hotkeys",
   "permissions": [
     "storage"
@@ -17,6 +17,10 @@
     "default_icon": "./icons/icon-32.png",
     "default_popup": "./popup/index.html",
     "default_title": "Quick Shot"
+  },
+  "options_ui": {
+    "page": "./popup/index.html",
+    "browser_style": true
   },
   "content_scripts": [
     {
