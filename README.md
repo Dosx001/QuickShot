@@ -27,4 +27,4 @@ Quickly navigate between URLs using hotkeys.
 ## UI
 
 ![preferences](https://addons.mozilla.org/user-media/previews/full/275/275865.png?modified=1669837031)
-![popup](https://addons.mozilla.org/user-media/previews/full/275/275866.png?modified=1669837031)
+![popup](https://addons.mozilla.org/user-media/previews/full/275/275932.png?modified=1670021054)
