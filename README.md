@@ -8,11 +8,21 @@ Quickly navigate between URLs using hotkeys.
 
 ## Hotkeys
 
+### Linux
+
 | Hotkey             | Action          |
 | ------------------ | --------------- |
 | Crtl + Num         | navigate to URL |
 | Crtl + Shift + Num | open tab to URL |
 | Crtl + Alt + Num   | save URL        |
+
+### Windows
+
+| Hotkey            | Action          |
+| ----------------- | --------------- |
+| Alt + Num         | navigate to URL |
+| Alt + Shift + Num | open tab to URL |
+| Alt + Crtl + Num  | save URL        |
 
 ## UI
 
