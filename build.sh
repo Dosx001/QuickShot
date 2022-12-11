@@ -2,4 +2,4 @@
 
 yarn
 tsc
-sass src:dest
+sass src:dist
