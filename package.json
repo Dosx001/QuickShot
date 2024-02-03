@@ -3,8 +3,9 @@
   "version": "1.3.0",
   "description": "Quickly navigate between URLs using hotkeys",
   "scripts": {
-    "build": "web-ext build -s dist -i '**/*.css.map' --overwrite-dest",
-    "tar": "tar czvf QuickShot.tar.gz src dist build.sh package.json tsconfig.json yarn.lock README_FIREFOX.md",
+    "build": "vite build",
+    "bundle": "web-ext build -s dist -o",
+    "tar": "tar czvf QuickShot.tar.gz src vite.config.mts package.json tsconfig.json pnpm-lock.yaml README_FIREFOX.md",
     "sass": "sass --update src:dist"
   },
   "devDependencies": {
