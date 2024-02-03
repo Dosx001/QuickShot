@@ -1,3 +1,4 @@
+import "./styles.scss";
 const app = document.getElementById("app");
 const table = document.createElement("table");
 

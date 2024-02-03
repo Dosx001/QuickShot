@@ -1,8 +1,6 @@
+/dist
 /node_modules
 /web-ext-artifacts
 QuickShot.tar.gz
-*.js
-*.css
-*.css.map
 yarn-debug.log*
 yarn-error.log*
